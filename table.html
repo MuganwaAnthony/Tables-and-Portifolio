@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables</title>
+    <style>
+    body { font-family: Calibri, sans-serif; margin: 40px; color: #000; }
+    p { font-size: 13px; margin-bottom: 12px; }
+    table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 13px; }
+    th, td { border: 1px solid #000; padding: 7px 10px; text-align: left; }
+    th { font-weight: bold; }
+  </style>
+
+</head>
+<body>
+<a href="myPortifolio.html"><button>Go to My Portifolio</button></a>
+<p>
+i. a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+</p>
+
+<p>
+ii. log<sub>b</sub> a = log<sub>c</sub> a / log<sub>c</sub> b
+</p>
+
+<p>
+iii. This text contains <sup>sensitive</sup> information which may be <sub>deciphered</sub> by 
+<b><i style="color:red;">NASA</i></b>.
+</p>
+
+<h3><b>My First List</b></h3>
+
+<ol style="font-weight: bold;">
+    <li><b>Fruits</b>
+        <ol type="i" style="font-weight: bold;">
+            <li><b>Berries:</b>
+                <ul style="list-style-type: circle; font-weight: bold;">
+                    <li><b>Apples</b></li>
+                    <li><b>Tomatoes</b></li>
+                </ul>
+            </li>
+            <li><b>Drupes</b>
+                <ul style="list-style-type: square; font-weight: bold;">
+                    <li><b>Mango</b></li>
+                    <li><b>Avocado</b></li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+
+    <li><b>Vegetables</b>
+        <ol type="a" style="font-weight: bold;">
+            <li><b>Leafy</b>
+                <ul style="list-style-type: disc; font-weight: bold;">
+                    <li><b>Kale</b></li>
+                    <li><b>Spinach</b></li>
+                </ul>
+            </li>
+            <li><b>Non-leafy</b>
+                <ul style="list-style-type: disc; font-weight: bold;">
+                    <li><b>Cabbage</b></li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+
+    <li><b>Meats</b>
+        <ol type="a" style="font-weight: bold;">
+            <li><b>White meats</b>
+                <ol type="A" style="font-weight: bold;">
+                    <li><b>Chicken</b></li>
+                    <li><b>Tuna</b></li>
+                </ol>
+            </li>
+            <li><b>Red Meats</b>
+                <ol type="I" style="font-weight: bold;">
+                    <li><b>Beef</b></li>
+                    <li><b>Mutton</b></li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+</ol>
+
+
+<h3><b>ii. My Second List</b></h3>
+
+<ol type="A" style="font-weight: bold;">
+    <li><b>Fruits</b>
+        <ol style="font-weight: bold;">
+            <li><b>Berries:</b>
+                <ol type="a" style="font-weight: bold;">
+                    <li><b>Apples</b></li>
+                    <li><b>Tomatoes</b></li>
+                </ol>
+            </li>
+            <li><b>Drupes</b>
+                <ol type="i" style="font-weight: bold;">
+                    <li><b>Mango</b></li>
+                    <li><b>Avocado</b></li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+
+    <li><b>Vegetables</b>
+        <ul style="font-weight: bold; list-style-type: disc;">
+            <li><b>Leafy</b>
+                <ol type="i" style="font-weight: bold;">
+                    <li><b>Kale</b></li>
+                    <li><b>Spinach</b></li>
+                </ol>
+            </li>
+            <li><b>Non-leafy</b>
+                <ol type="a" style="font-weight: bold;">
+                    <li><b>Cabbage</b></li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+
+    <li><b>Meats</b>
+        <ul style="font-weight: bold; list-style-type: square;">
+            <li><b>White meats</b></li>
+        </ul>
+    </li>
+</ol>
+
+<h3><b>iii. My First Table</b></h3>
+<table border="1" style="border-collapse: collapse; font-weight: bold;">
+    <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    <tr>
+        <td>SCS101</td>
+        <td>SCS104</td>
+        <td>SCS105</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>SCS104</td>
+        <td></td>
+        <td>SCS105</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SCS101</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SCS101</td>
+        <td></td>
+        <td></td>
+        <td>SC102</td>
+        <td>SC102</td>
+    </tr>
+</table>
+<h3><b>iv. My Second Table</b></h3>
+<table border="1" style="border-collapse: collapse; font-weight: bold;">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1: Monday rowspan=2, Thursday rowspan=2 -->
+      <tr>
+        <td rowspan="2">SCS101</td>
+        <td>SCS104</td>
+        <td>SCS105</td>
+        <td rowspan="2"></td>
+        <td></td>
+      </tr>
+      <!-- Row 2: Monday and Thursday already spanned -->
+      <tr>
+        <td></td>
+        <td>SCS104</td>
+        <td>SCS105</td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td></td>
+        <td>SCS101</td>
+        <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <!-- Row 4: last 3 cells merged with colspan=3 -->
+      <tr>
+        <td>SCS101</td>
+        <td></td>
+        <td></td>
+        <td>SC102</td>
+        <td>SC102</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><b>iv. My Third table</b></h3>
+<table border="1" style="border-collapse: collapse; font-weight: bold;">
+  <table>
+    <thead>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">SCS101</td>
+        <td>SCS104</td>
+        <td>SCS105</td>
+        <td rowspan="2"><strong>i. Eat</strong><br><br><strong>ii. Sleep</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>SCS104</td>
+        <td>SCS105</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>SCS101</td>
+        <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td>SCS101</td>
+        <td></td>
+        <td></td>
+        <td>SCS102</td>
+        <td>SCS102</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+<h3><b>iv. My Fourth table</b></h3>
+<table border="1" style="border-collapse: collapse; font-weight: bold;">
+  <table>
+    <thead>
+      <tr>
+        <th style="width:14%">Monday</th>
+        <th style="width:14%">Tuesday</th>
+        <th style="width:3%"></th>
+        <th style="width:18%">Wednesday</th>
+        <th style="width:3%"></th>
+        <th style="width:18%">Thursday</th>
+        <th style="width:14%">Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <td>SCS101</td>
+        <td>SCS104</td>
+        <td rowspan="2" class="break-col" style="border-bottom: none;"><strong>B<br>R<br>E<br>A<br>K</strong></td>
+        <td>SCS105</td>
+        <td rowspan="2" class="lunch-col" style="border-bottom: none;"><strong>L<br>U<br>N<br>C<br>H</strong></td>
+        <td><strong>SCS102</strong></td>
+        <td></td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td rowspan="2"><strong>SCS111</strong></td>
+        <td style="border-bottom: none;"></td>
+        <td rowspan="2">SCS104</td>
+        <td style="border-bottom: none;"></td>
+        <td rowspan="2">SCS105</td>
+      </tr>
+      <!-- Blank row without horizontal line -->
+      <tr>
+        <td colspan="7" style="border-top: none;">&nbsp;</td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
